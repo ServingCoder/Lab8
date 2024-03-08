@@ -44,7 +44,7 @@ public class CustomListTest {
         //Test if the city is not in the list
         assertFalse(list.hasCity(newCity));
         //add city to the list
-        list.add(newCity);
+        list.addCity(newCity);
         //Test if the city is in the list
         assertTrue(list.hasCity(newCity));
 
@@ -56,7 +56,7 @@ public class CustomListTest {
         list = MockCityList();
         City newCity = new City("Charlottetown", "Prince Edward Island");
         //add city to the list
-        list.add(newCity);
+        list.addCity(newCity);
         //Test if the city is in the list
         assertTrue(list.hasCity(newCity));
         //Remove the city from the list
