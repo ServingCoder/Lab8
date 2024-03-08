@@ -60,7 +60,7 @@ public class CustomList extends ArrayAdapter<City> {
 
     public boolean hasCity(City city){
 
-        for (City myCity: cities){
+        for (City myCity: this.cities){
             if (city.equals(myCity)){
                 return true;
             }
