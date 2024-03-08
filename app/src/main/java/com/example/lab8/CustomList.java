@@ -45,12 +45,20 @@ public class CustomList extends ArrayAdapter<City> {
 
     }
 
+    /**
+    **
+    * this gets size of the list
+    * @return
+    */
     public int getCount(){
         return cities.size();
     }
 
     public void addCity(City city){
-
+        /*if (cities.contains(city)) {
+            throw new IllegalArgumentException();
+        }
+        cities.add(city);*/
     }
 
 }
