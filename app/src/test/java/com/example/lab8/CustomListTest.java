@@ -50,5 +50,21 @@ public class CustomListTest {
 
     }
 
+    @Test
+    public void DeleteCity(){
+
+        list = MockCityList();
+        City newCity = new City("Charlottetown", "Prince Edward Island");
+        //add city to the list
+        list.add(newCity);
+        //Test if the city is in the list
+        assertTrue(list.hasCity(newCity));
+        //Remove the city from the list
+        list.deleteCity(newCity);
+        //Test again that the city is not in the list
+        assertFalse(list.hasCity(newCity));
+
+    }
+
 };
 
